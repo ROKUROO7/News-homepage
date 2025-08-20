@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  
+  <link rel="stylesheet" href="./scss/style.css">
+  <script defer src="./script.js"></script>
+  
+</head>
+
+<body>
+  <header class="head">
+    <img class="head_logo" src="./assets/images/logo.svg" alt="website logo">
+    <nav class="head_navigation">
+      <button type="button" class="head_button" tabindex="0">
+        <img id="menu-icon" class="head_navigation-icon head_navigation-icon--inactive" src="./assets/images/icon-menu.svg" alt="open menu">
+      </button>
+      <ul id="navigation-lists" class="head_navigation-lists head_navigation-lists--inactive">
+        <button type="button" class="head_button head_navigation-lists--close" tabindex="0">
+          <img id="close-icon" aria-labelledby="close menu" src="./assets/images/icon-menu-close.svg" alt="close menu" />
+        </button>
+        <li><button type="button" class="head_button" tabindex="0">Home</button></li>
+        <li><button type="button" class="head_button" tabindex="0">New</button></li>
+        <li><button type="button" class="head_button" tabindex="0">Popular</button></li>
+        <li><button type="button" class="head_button" tabindex="0">Trending</button></li>
+        <li><button type="button" class="head_button" tabindex="0">Categories</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="div-opacity" aria-hidden="true" class="reduce-opacity reduce-opacity--inactive"></div>
+  
+  <main class="main">
+    <article class="news">
+      
+      <header class="news_header">
+        <picture class="news_hero-image">
+          <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 45rem)">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="web 3.0">
+        </picture>
+      </header>
+      
+      <section class="news_section">
+        <h1 class="news_title">The Bright Future of Web 3.0?</h1>
+        
+        <p class="news_description">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        
+        <button class="news_button" type="button" tabindex="0">Read more</button>
+      </section>
+      
+    </article>
+
+    <article class="new-article" aria-label="new news">
+
+      <h2 class="new-article_title">New</h2>
+      
+      <section class="new-article_news">
+        <h3 class="new-article_news-title" tabindex="0">Hydrogen VS Electric Cars</h3>
+        <p class="new-article_news-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </section>
+      
+      <section class="new-article_news">
+        <h3 class="new-article_news-title" tabindex="0">The Downsides of AI Artistry</h3>
+        <p class="new-article_news-description">What are the possible adverse effects of on-demand AI image generation?</p>
+      </section>
+      
+      <section class="new-article_news new-article_news--last">
+        <h3 class="new-article_news-title" tabindex="0">Is VC Funding Drying Up?</h3>
+        <p class="new-article_news-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </section>
+      
+    </article>
+    
+    <article class="trending-news" aria-label="trending news">
+      
+      <article class="trending-news_article">
+        
+        <header class="trending-news_header">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="retro pcs" />
+        </header>
+        
+        <section class="trending-news_section">
+          <header class="trending-news_number">
+            01
+          </header>
+          <h3 class="trending-news_title" tabindex="0">Reviving Retro PCs</h3>
+          <p class="trending-news_description">What happens when old PCs are given modern upgrades?</p>
+        </section>
+        
+      </article>
+      
+      <article class="trending-news_article">
+        
+        <header class="trending-news_header">
+          <img src="./assets/images/image-top-laptops.jpg" alt="top laptop" />
+        </header>
+        
+        <section class="trending-news_section">
+          <header class="trending-news_number">
+            02
+          </header>
+          <h3 class="trending-news_title" tabindex="0">Top 10 Laptops of 2022</h3>
+          <p class="trending-news_description">Our best picks for various needs and budgets.</p>
+        </section>
+      </article>
+
+      <article class="trending-news_article">
+        
+        <header class="trending-news_header">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="gaming growth" />
+        </header>
+        
+        <section class="trending-news_section">
+          <header class="trending-news_number">
+            03
+          </header>
+          <h3 class="trending-news_title" tabindex="0">The Growth of Gaming</h3>
+          <p class="trending-news_description">How the pandemic has sparked fresh opportunities.</p>
+        </section>
+        
+      </article>
+      
+    </article>
+    
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">ROKUROO7</a>.
+  </footer>
+
+</body>
+</html>
